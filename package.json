@@ -7,7 +7,7 @@
     "compile": "hardhat compile",
     "build": "hardhat clean && hardhat compile --force",
     "coverage": "hardhat coverage",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test test/Lock.ts"
   },
   "keywords": [],
   "author": "Robot",
@@ -15,5 +15,11 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.12.4"
+  },
+  "dependencies": {
+    "@ensdomains/ens-contracts": "^0.0.15",
+    "@ethersproject/solidity": "^5.7.0",
+    "@openzeppelin/contracts": "^4.8.0",
+    "eth-ens-namehash": "^2.0.8"
   }
 }
